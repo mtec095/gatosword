@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>::GatosWord::</title>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div>
+          <img src="imagenes/principal.jpg" alt="principal" />
+        </div>
+        <div>
+          <ul>
+            <a href="home">
+              <li>HOME</li>
+            </a>
+            <a href="nosotros">
+              <li>NOSOTROS</li>
+            </a>
+            <a href="#novedades">
+              <li>NOVEDADES</li>
+            </a>
+          </ul>
+        </div>
+      </header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./imagenes/carrousel1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imagenes/carrousel2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/cat5.jpeg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <div class="conte">
+        <div class="noticias">
+          <h1>
+            EN ESPAÑA LOS ANIMALES YA SON LEGALMENTE “SERES DOTADOS DE
+            SENSIBILIDAD”
+          </h1>
+          <div id="contenido">
+            <p>
+              En su cuarto año consecutivo, Yo puedo Programar reunio 3.700 de
+              estudiantes de 86 escuelas de todo el pais.La creatividad y la
+              autonomia digital.Una vez mas su objetivo fue alcanzado
+            </p>
+          </div>
+          <button
+            onclick="muestra_oculta('contenido')"
+            class="btn btn-primary"
+            form="contenido2"
+          >
+            +
+          </button>
+        </div>
+        <div class="noticias">
+          <h1>
+            EL CÁNCER ES LA PRIMERA CAUSA DE MUERTE EN LAS MASCOTAS DE EDAD
+            AVANZADA
+          </h1>
+          <div id="contenido2">
+            <p>
+              El cáncer es una de las mayores preocupaciones para los cuidadores
+              de perros y gatos, siendo la primera causa de muerte de los
+              animales geriátricos. Por ello, tanto cuidadores como veterinarios
+              han ido tomando conciencia
+            </p>
+          </div>
+          <button
+            onclick="muestra_oculta('contenido2')"
+            class="btn btn-primary"
+            form="contenido2"
+          >
+            +
+          </button>
+        </div>
+        <div class="noticias">
+          <h1>
+            DÍA INTERNACIONAL DE LOS DERECHOS DE LOS ANIMALES, 10 DE DICIEMBRE
+          </h1>
+          <div id="contenido3">
+            <p>
+              Esta declaración fue adoptada por La Liga Internacional de los
+              Derechos del Animal en 1977, celebrada en Londres, que la proclamó
+              al año siguiente. Posteriormente, fue aprobada por la Organización
+              de Naciones Unidas (ONU) y por la Organización de las Naciones
+              Unidas para la Educación, la Ciencia y la Cultura (UNESCO).
+            </p>
+          </div>
+          <button
+            onclick="muestra_oculta('contenido3')"
+            class="btn btn-primary"
+            form="contenido2"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="caja">
+        <img src="./imagenes/cat1.jpeg" alt="cat1" />
+        <h1>FELINOS MÍTICOS Y FABULOSOS</h1>
+        <p>
+          La mágica combinación de fuerza individual, agilidad y visión nocturna
+          ha supuesto que los humanos hayan considerado a los felinos animales
+          fascinadores y poderosos y les hayan hecho formar parte de sus mitos y
+          rituales.
+        </p>
+      </div>
+      <div class="caja">
+        <img src="./imagenes/cat3.jpg" alt="cat3" />
+        <h1>¿ES POSIBLE EDUCAR A UN GATO?</h1>
+        <p>
+          El carácter independiente y solitario del gato no implica que no pueda
+          aprender unas normas de conducta básicas que favorezcan y faciliten la
+          convivencia con los humanos.
+        </p>
+      </div>
+      <div class="caja">
+        <img src="./imagenes/cat4.jpeg" alt="cat4" />
+        <h1>EL EJERCICIO EN LOS CACHORROS</h1>
+        <p>
+          El ejercicio le permite al cachorro desarrollar una vida dinámica y
+          positiva, fortalece sus músculos, le permite aprovechar de mejor forma
+          los aportes energéticos del alimento, le da vigor y mejora el
+          funcionamiento de órganos vitales.
+        </p>
+      </div>
+    </div>
+    <div id="#novedades">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/aTv0L-Jqu84"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <footer>
+      <p>
+        Conocé nuestra Política de privacidad | Todos los derechos reservados.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
